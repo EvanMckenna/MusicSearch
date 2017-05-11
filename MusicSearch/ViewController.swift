@@ -8,24 +8,47 @@
 
 import UIKit
 import Alamofire
+import AVFoundation
 
-
+var player = AVAudioPlayer()
 
 struct song {
     let finalImage : UIImage
+    let previewSong : String!
     let name : String!
 }
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, UISearchBarDelegate {
 
+    
+    @IBOutlet weak var SearchBar: UISearchBar!
+
+    
     var songs = [song]()
-    var searchURL = "https://api.spotify.com/v1/search?q=Foo+Fighters&type=track&limit=10&offset=5"
+    var searchURL = String()
+    var previewSong = String()
+    
     typealias JSONExp = [String : AnyObject]
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let keywords = SearchBar.text
+        
+       let artistKeywords = keywords?.replacingOccurrences(of: " ", with: "+")
+        
+        searchURL = "https://api.spotify.com/v1/search?q=\(artistKeywords!)&type=track&offset=25"
+        print(searchURL)
+        callAlamo(url: searchURL)
+        self.view.endEditing(true)
+        Search()
+        
+        
+    }
     override func viewDidLoad() {
         
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
    callAlamo(url: searchURL)
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
         for parent in navigationController!.view.subviews {
             for child in parent.subviews {
@@ -38,10 +61,14 @@ class TableViewController: UITableViewController {
         }
 
         
+        
+        
     }
     
     
-    
+    func Search() {
+        songs.removeAll()
+    }
     
     //call url
     func callAlamo(url : String){
@@ -69,7 +96,7 @@ class TableViewController: UITableViewController {
                         let item = items[i] as! JSONExp
                         print(item)
                         let name = item["name"] as! String
-                        
+                        let previewSong = item["preview_url"] as! String
                         
                         if let album = item["album"] as? JSONExp{
                             if let images = album["images"] as? [JSONExp]{
@@ -79,7 +106,7 @@ class TableViewController: UITableViewController {
                            
                                 let finalImage = UIImage(data: imagecoverdata as! Data)
                             
-                                songs.append(song.init(finalImage: finalImage!, name: name))
+                                songs.append(song.init(finalImage: finalImage!, previewSong: previewSong, name: name))
                                 self.tableView.reloadData()
 
                                 
@@ -123,7 +150,23 @@ class TableViewController: UITableViewController {
         
         return cell!
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = self.tableView.indexPathForSelectedRow?.row
+        
+        let view = segue.destination as! Player
+        
+        view.image = songs[indexPath!].finalImage
+        view.songTitle = songs[indexPath!].name
+        view.previewSongPop  = songs[indexPath!].previewSong
+    }
+    
+  
+    
 
+
+
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

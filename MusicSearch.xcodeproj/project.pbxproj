@@ -16,6 +16,16 @@
 		2015D65D1EC28E39004288FB /* MusicSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2015D65C1EC28E39004288FB /* MusicSearchUITests.swift */; };
 		2015D66B1EC28FAA004288FB /* roboto in Resources */ = {isa = PBXBuildFile; fileRef = 2015D66A1EC28FAA004288FB /* roboto */; };
 		2015D66D1EC28FC2004288FB /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2015D66C1EC28FC2004288FB /* Roboto-Italic.ttf */; };
+		202AA93A1EC4E650000DED05 /* Asset 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 202AA9391EC4E650000DED05 /* Asset 10.png */; };
+		202AA93C1EC4E655000DED05 /* Asset 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 202AA93B1EC4E655000DED05 /* Asset 9.png */; };
+		204FC2E91EC3D1E800CD650D /* Music Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 204FC2E81EC3D1E800CD650D /* Music Search.png */; };
+		204FC2EB1EC3D2A700CD650D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 204FC2EA1EC3D2A700CD650D /* Icon.png */; };
+		204FC2ED1EC3D41700CD650D /* Nav bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 204FC2EC1EC3D41700CD650D /* Nav bar.png */; };
+		204FC2EF1EC3D5F300CD650D /* Back 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 204FC2EE1EC3D5F300CD650D /* Back 1.png */; };
+		2053849A1EC4C48C000B0A1E /* MusicSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 205384991EC4C48C000B0A1E /* MusicSearch.png */; };
+		2053849C1EC4C602000B0A1E /* Back_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2053849B1EC4C602000B0A1E /* Back_1.png */; };
+		2053849E1EC4C6BB000B0A1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053849D1EC4C6BB000B0A1E /* HomeViewController.swift */; };
+		205384A01EC4CFDC000B0A1E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053849F1EC4CFDC000B0A1E /* Player.swift */; };
 		2A139454D1FFC3C3F555421B /* Pods_MusicSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483E677336895916731AC923 /* Pods_MusicSearchTests.framework */; };
 		D0A71B1636FE2015ADE59AC4 /* Pods_MusicSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA9E3A80E5EFBB294BB71B /* Pods_MusicSearch.framework */; };
 		EF83D5CE2DC888631CCB90B0 /* Pods_MusicSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3340A31BE61636E3C39F04 /* Pods_MusicSearchUITests.framework */; };
@@ -55,6 +65,16 @@
 		2015D65E1EC28E39004288FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2015D66A1EC28FAA004288FB /* roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roboto; sourceTree = "<group>"; };
 		2015D66C1EC28FC2004288FB /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		202AA9391EC4E650000DED05 /* Asset 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Asset 10.png"; sourceTree = "<group>"; };
+		202AA93B1EC4E655000DED05 /* Asset 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Asset 9.png"; sourceTree = "<group>"; };
+		204FC2E81EC3D1E800CD650D /* Music Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Music Search.png"; sourceTree = "<group>"; };
+		204FC2EA1EC3D2A700CD650D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		204FC2EC1EC3D41700CD650D /* Nav bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nav bar.png"; sourceTree = "<group>"; };
+		204FC2EE1EC3D5F300CD650D /* Back 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back 1.png"; sourceTree = "<group>"; };
+		205384991EC4C48C000B0A1E /* MusicSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MusicSearch.png; sourceTree = "<group>"; };
+		2053849B1EC4C602000B0A1E /* Back_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back_1.png; sourceTree = "<group>"; };
+		2053849D1EC4C6BB000B0A1E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2053849F1EC4CFDC000B0A1E /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2CC64C57F988048B8D058DA4 /* Pods-MusicSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicSearchTests/Pods-MusicSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		36AF1016C3BBDD5E88BF9CEF /* Pods-MusicSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicSearchUITests/Pods-MusicSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		37267E543C1661DBEBBC29DA /* Pods-MusicSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicSearchTests/Pods-MusicSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,11 +139,21 @@
 			isa = PBXGroup;
 			children = (
 				2015D63C1EC28E38004288FB /* AppDelegate.swift */,
+				204FC2EE1EC3D5F300CD650D /* Back 1.png */,
 				2015D63E1EC28E38004288FB /* ViewController.swift */,
 				2015D6401EC28E38004288FB /* Main.storyboard */,
+				2053849F1EC4CFDC000B0A1E /* Player.swift */,
+				2053849D1EC4C6BB000B0A1E /* HomeViewController.swift */,
 				2015D6431EC28E38004288FB /* Assets.xcassets */,
 				2015D66C1EC28FC2004288FB /* Roboto-Italic.ttf */,
+				204FC2EC1EC3D41700CD650D /* Nav bar.png */,
 				2015D6451EC28E38004288FB /* LaunchScreen.storyboard */,
+				202AA9391EC4E650000DED05 /* Asset 10.png */,
+				2053849B1EC4C602000B0A1E /* Back_1.png */,
+				204FC2EA1EC3D2A700CD650D /* Icon.png */,
+				202AA93B1EC4E655000DED05 /* Asset 9.png */,
+				205384991EC4C48C000B0A1E /* MusicSearch.png */,
+				204FC2E81EC3D1E800CD650D /* Music Search.png */,
 				2015D6481EC28E38004288FB /* Info.plist */,
 				2015D66A1EC28FAA004288FB /* roboto */,
 			);
@@ -290,10 +320,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202AA93A1EC4E650000DED05 /* Asset 10.png in Resources */,
+				204FC2ED1EC3D41700CD650D /* Nav bar.png in Resources */,
 				2015D6471EC28E38004288FB /* LaunchScreen.storyboard in Resources */,
 				2015D6441EC28E38004288FB /* Assets.xcassets in Resources */,
+				204FC2EF1EC3D5F300CD650D /* Back 1.png in Resources */,
+				2053849C1EC4C602000B0A1E /* Back_1.png in Resources */,
+				202AA93C1EC4E655000DED05 /* Asset 9.png in Resources */,
 				2015D66D1EC28FC2004288FB /* Roboto-Italic.ttf in Resources */,
 				2015D6421EC28E38004288FB /* Main.storyboard in Resources */,
+				204FC2E91EC3D1E800CD650D /* Music Search.png in Resources */,
+				2053849A1EC4C48C000B0A1E /* MusicSearch.png in Resources */,
+				204FC2EB1EC3D2A700CD650D /* Icon.png in Resources */,
 				2015D66B1EC28FAA004288FB /* roboto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,8 +495,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205384A01EC4CFDC000B0A1E /* Player.swift in Sources */,
 				2015D63F1EC28E38004288FB /* ViewController.swift in Sources */,
 				2015D63D1EC28E38004288FB /* AppDelegate.swift in Sources */,
+				2053849E1EC4C6BB000B0A1E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +753,7 @@
 				2015D6631EC28E39004288FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2015D6641EC28E39004288FB /* Build configuration list for PBXNativeTarget "MusicSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +762,7 @@
 				2015D6661EC28E39004288FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2015D6671EC28E39004288FB /* Build configuration list for PBXNativeTarget "MusicSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -729,6 +771,7 @@
 				2015D6691EC28E39004288FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
