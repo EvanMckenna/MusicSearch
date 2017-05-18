@@ -113,6 +113,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20060E4F1ECE55DC00A5E70D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				204FC2EE1EC3D5F300CD650D /* Back 1.png */,
+				204FC2EC1EC3D41700CD650D /* Nav bar.png */,
+				202AA9391EC4E650000DED05 /* Asset 10.png */,
+				2053849B1EC4C602000B0A1E /* Back_1.png */,
+				204FC2EA1EC3D2A700CD650D /* Icon.png */,
+				202AA93B1EC4E655000DED05 /* Asset 9.png */,
+				205384991EC4C48C000B0A1E /* MusicSearch.png */,
+				204FC2E81EC3D1E800CD650D /* Music Search.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		2015D6301EC28E38004288FB = {
 			isa = PBXGroup;
 			children = (
@@ -139,22 +154,15 @@
 			isa = PBXGroup;
 			children = (
 				2015D63C1EC28E38004288FB /* AppDelegate.swift */,
-				204FC2EE1EC3D5F300CD650D /* Back 1.png */,
 				2015D63E1EC28E38004288FB /* ViewController.swift */,
 				2015D6401EC28E38004288FB /* Main.storyboard */,
 				2053849F1EC4CFDC000B0A1E /* Player.swift */,
 				2053849D1EC4C6BB000B0A1E /* HomeViewController.swift */,
 				2015D6431EC28E38004288FB /* Assets.xcassets */,
 				2015D66C1EC28FC2004288FB /* Roboto-Italic.ttf */,
-				204FC2EC1EC3D41700CD650D /* Nav bar.png */,
 				2015D6451EC28E38004288FB /* LaunchScreen.storyboard */,
-				202AA9391EC4E650000DED05 /* Asset 10.png */,
-				2053849B1EC4C602000B0A1E /* Back_1.png */,
-				204FC2EA1EC3D2A700CD650D /* Icon.png */,
-				202AA93B1EC4E655000DED05 /* Asset 9.png */,
-				205384991EC4C48C000B0A1E /* MusicSearch.png */,
-				204FC2E81EC3D1E800CD650D /* Music Search.png */,
 				2015D6481EC28E38004288FB /* Info.plist */,
+				20060E4F1ECE55DC00A5E70D /* Images */,
 				2015D66A1EC28FAA004288FB /* roboto */,
 			);
 			path = MusicSearch;
