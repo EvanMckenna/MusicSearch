@@ -6,12 +6,12 @@ Music Search is a Swift application which uses the Spotify API which will allow 
 
 ### Frameworks
 
-AlamoFire
-AvFoundation
+* AlamoFire
+* AvFoundation
 
 ### API's
 
-Spotify API
+* Spotify API
 
 ### Controllers
 
