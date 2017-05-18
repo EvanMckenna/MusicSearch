@@ -127,7 +127,11 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
                         if let album = item["album"] as? JSONExp{
                             if let images = album["images"] as? [JSONExp]{
                                 let imagecover = images[0]
+                                
+                                //URL is the url of the image in the image cover array as a string ^^
                                 let imageURL =  URL(string : imagecover ["url"] as! String)
+                                
+                                
                                 let imagecoverdata = NSData(contentsOf: imageURL!)
                            
                                 let finalImage = UIImage(data: imagecoverdata as! Data)
@@ -149,16 +153,18 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
                 }
             }
         }
-        
+        //print error if nothing is there
         catch {
             print(error)
         }
     }
     
+    //Need this for the table view
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count
     }
     
+    //Need this for the table view
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
