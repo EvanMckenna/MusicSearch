@@ -52,7 +52,7 @@
                                     <color key="titleColor" red="0.98823529409999999" green="0.31764705879999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zby-w4-ddi" kind="push" id="ZIL-mJ-Ux7"/>
+                                    <segue destination="zby-w4-ddi" kind="show" id="rBf-dH-ZPB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -289,7 +289,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ckA-zx-P7t" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" backIndicatorImage="Back 1.png" id="YQv-mY-zMW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" backIndicatorImage="Back 1.png" id="YQv-mY-zMW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0039215686269999999" green="0.086274509799999996" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

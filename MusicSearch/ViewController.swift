@@ -33,9 +33,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         let keywords = SearchBar.text
         
        let artistKeywords = keywords?.replacingOccurrences(of: " ", with: "+")
-    
-        //Let the this variable = the text entered in the search i.e the artist
-        let displayArtist = SearchBar.text
+
         
         //Api which searches. This is replaced with the keyword. This is necessary to allow users to search for any artist as the this key needs to update everytime.
         searchURL = "https://api.spotify.com/v1/search?q=\(artistKeywords!)&type=track&offset=25"
@@ -106,6 +104,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
             var readableJSON = try JSONSerialization.jsonObject(with: JSONData, options: .mutableContainers) as! JSONExp
             //Accessing Tracks
             if let tracks = readableJSON["tracks"] as? JSONExp{
+                
                 //Accessing items
             if let items = tracks["items"] as? [JSONExp] {
                 
@@ -114,13 +113,13 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
                     for i in 0..<items.count{
                         
                         //Selection the items
-                        let item = items[i] as! JSONExp
+                        let item = items[i]
                         print(item)
                         
                         //Getting the name
                         let name = item["name"] as! String
                         
-                        //Getting the preview
+                        //Getting the preview as a String
                         let previewSong = item["preview_url"] as! String
                         
                         

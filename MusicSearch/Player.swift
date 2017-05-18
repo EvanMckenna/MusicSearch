@@ -75,6 +75,12 @@ class Player: UIViewController {
         }
     }
     
+    //When popup is closed, stop the music
+    @IBAction func closePopUp(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        player.pause()
+    }
+    
     @IBAction func PlaySong(_ sender: Any) {
         
         //Pause the song when function is called
@@ -91,11 +97,7 @@ class Player: UIViewController {
         }
     }
 
-    //When popup is closed, stop the music
-    @IBAction func closePopUp(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-        player.pause()
-    }
+  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
