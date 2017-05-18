@@ -33,11 +33,21 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         let keywords = SearchBar.text
         
        let artistKeywords = keywords?.replacingOccurrences(of: " ", with: "+")
+    
+        //Let the this variable = the text entered in the search i.e the artist
+        let displayArtist = SearchBar.text
         
+        //Api which searches. This is replaced with the keyword. This is necessary to allow users to search for any artist as the this key needs to update everytime.
         searchURL = "https://api.spotify.com/v1/search?q=\(artistKeywords!)&type=track&offset=25"
         print(searchURL)
+        
+        // Call the function, this puts the searchURL as the String in the function
         callAlamo(url: searchURL)
+        
+        //Ends the keyboard
         self.view.endEditing(true)
+        
+        
         Search()
         
         
@@ -49,7 +59,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         // Do any additional setup after loading the view, typically from a nib.
    callAlamo(url: searchURL)
         self.navigationItem.setHidesBackButton(true, animated: false)
-        
+        //Removes the line under the navigation bar
         for parent in navigationController!.view.subviews {
             for child in parent.subviews {
                 for view in child.subviews {
@@ -65,13 +75,14 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         
     }
     
-    
+    //Updates the table. After each search deletes the array and repopulates with new artist
     func Search() {
         songs.removeAll()
     }
     
-    //call url
+    //call url.. This allows Alamo to get the data in the above url
     func callAlamo(url : String){
+        
         
         Alamofire.request(url).responseJSON(completionHandler: {
             
@@ -85,19 +96,33 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         
     }
     
+    //Makes the data readable i.e Parsing the JSON
     func parseData(JSONData : Data) {
         
         do {
             
             var readableJSON = try JSONSerialization.jsonObject(with: JSONData, options: .mutableContainers) as! JSONExp
+            //Accessing Tracks
             if let tracks = readableJSON["tracks"] as? JSONExp{
+                //Accessing items
             if let items = tracks["items"] as? [JSONExp] {
+                
+                
+                //Cycle and count the items from items
                     for i in 0..<items.count{
+                        
+                        //Selection the items
                         let item = items[i] as! JSONExp
                         print(item)
+                        
+                        //Getting the name
                         let name = item["name"] as! String
+                        
+                        //Getting the preview
                         let previewSong = item["preview_url"] as! String
                         
+                        
+                        //Getting the art
                         if let album = item["album"] as? JSONExp{
                             if let images = album["images"] as? [JSONExp]{
                                 let imagecover = images[0]
@@ -136,15 +161,20 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
+        //setting the image view tagged as 2 in the identifier
        let imageView = cell?.viewWithTag(2) as! UIImageView
         
+        //Setting this image to the finalImage (Cover) to that imageview
         imageView.image = songs[indexPath.row].finalImage
         
+        //same with the label
         let nameLabel = cell?.viewWithTag(1) as! UILabel
         
         nameLabel.text = songs[indexPath.row].name
         
+        //To create the border of the image view behind the cover
         self.view.layoutIfNeeded()
+        //Rounded corners
         imageView.layer.cornerRadius = imageView.frame.size.width/2
         imageView.clipsToBounds = true
         
@@ -156,9 +186,13 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         
         let view = segue.destination as! Player
         
+        //Passing values to other view controller (Player)
         view.image = songs[indexPath!].finalImage
         view.songTitle = songs[indexPath!].name
         view.previewSongPop  = songs[indexPath!].previewSong
+        view.
+        
+        
     }
     
   
