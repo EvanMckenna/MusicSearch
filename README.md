@@ -37,10 +37,10 @@ The search screen consists of a table view and a search bar. This table view is 
 
 The player is a seperate view controller altered to make it look like a popup instead of navigating away from the table view. This player has a minimalist look and feel to it also.
 
-* Instead of a usual seque, a modal popover is used. By creating a view in the middle of the controller and then turning the opacity of the main view, this allows the embedded view to have a popup effect.
+* Instead of an usual seque, a modal popover is used. By creating a view in the middle of the controller and then turning the opacity of the main view, this allows the embedded view to have a popup effect.
 
 ![modal](https://cloud.githubusercontent.com/assets/22193702/26218870/81001306-3c04-11e7-97bf-02834e37bb03.png)
 
 * The data is passed through the search view controller to the player view controller.
-* The player is controller by using AVFoundation. There is only one controller and it is controller through this view. When the popup opens there is an if statement that if it is not playing, then play audio. It is very simple and effective code to get working.
+* The player is controller by using AVFoundation. There is only one audio controller and it is controlled through this view. When the popup opens there is an if statement that if it is not playing, then play audio. It is very simple and effective code to get working.
   
