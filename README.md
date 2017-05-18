@@ -17,7 +17,7 @@ Spotify API
 
 ## Home Controller
 
-The home controller is a simple page which displays what the app is about. It also displays the logo and the colour palette present within the application. The logo was designed by myself.
+The home controller is a simple page which displays what the app is about. It also displays the logo and the colour palette present within the application. The logo was designed by myself and created using Adobe Illustrator.
 
 ## Search
 
