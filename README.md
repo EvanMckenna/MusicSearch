@@ -31,6 +31,7 @@ The search screen consists of a table view and a search bar. This table view is 
 
 ![0800010994102c97abd626f2c60ede36](https://cloud.githubusercontent.com/assets/22193702/26219394/b77d71ba-3c06-11e7-9789-5f466b2573bf.png)
 
+* I am only storing the name, cover and preview as the other information is not necessarily needed.
 
 ## Player
 
