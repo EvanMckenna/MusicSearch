@@ -71,6 +71,8 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         }
 
         
+        let textfieldAppearence = UITextField.appearance()
+        textfieldAppearence.keyboardAppearance = .dark
         
         
     }
@@ -190,7 +192,6 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         view.image = songs[indexPath!].finalImage
         view.songTitle = songs[indexPath!].name
         view.previewSongPop  = songs[indexPath!].previewSong
-        view.
         
         
     }

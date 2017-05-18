@@ -94,7 +94,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.98823529409999999" green="0.31764705879999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="barTintColor" red="0.0039215686269999999" green="0.086274509799999996" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             <scopeButtonTitles>
                                 <string>Title</string>
                                 <string>Title</string>
